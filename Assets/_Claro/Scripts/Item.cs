@@ -13,6 +13,11 @@ namespace Claro.Map
             ItemManager.Instance.Current = this;
         }
 
+        public void SetNull()
+        {
+            ItemManager.Instance.Current = null;
+        }
+
         public void Display(bool display)
         {
             this.canvas.enabled = display;
