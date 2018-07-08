@@ -358,7 +358,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: caa6c6f6f7879034992a27a6bc3794fd, type: 2}
   m_StaticBatchInfo:
@@ -393,7 +392,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: caa6c6f6f7879034992a27a6bc3794fd, type: 2}
   m_StaticBatchInfo:
@@ -670,11 +668,6 @@ MonoBehaviour:
   _desiredAccuracyInMeters: 5
   _updateDistanceInMeters: 5
   _updateTimeInMilliSeconds: 1000
-  _userHeadingSmoothing: {fileID: 0}
-  _deviceOrientationSmoothing: {fileID: 0}
-  _editorDebuggingOnly:
-    _mockUnityInputLocation: 0
-    _locationLogFile: {fileID: 4900000, guid: 5e6bb7224cef35c4788a4817b1c9778d, type: 3}
 --- !u!114 &114668955501623132
 MonoBehaviour:
   m_ObjectHideFlags: 1
