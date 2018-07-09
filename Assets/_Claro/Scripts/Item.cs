@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Claro.Map
+﻿namespace Claro.Map
 {
+    using UnityEngine;
+
     public class Item : MonoBehaviour
     {
         [SerializeField] private Canvas canvas;
@@ -27,7 +25,6 @@ namespace Claro.Map
         {
             this.Display(false);
         }
-
     }
 }
 

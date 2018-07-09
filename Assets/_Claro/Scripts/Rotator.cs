@@ -1,49 +1,50 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum Axis
+﻿namespace Claro.Map
 {
-	x,
-	y,
-	z
-}
+    using UnityEngine;
 
-public class Rotator : MonoBehaviour
-{
-	public Axis axis;
-	public float speed;
-
-
-    private Transform t;
-    private float angle = 0.0f;
-
-    public float Angle
+    public enum Axis
     {
-        get { return angle; }
-        set { angle = value; }
+    	x,
+    	y,
+    	z
     }
 
-    void Start () 
+    public class Rotator : MonoBehaviour
     {
-        t = GetComponent<Transform>();
-	}
-	
-	void Update () 
-    {
-        angle = angle + speed * Time.deltaTime;
-		switch (axis) 
-		{
-		case Axis.x:
-			t.eulerAngles = new Vector3(angle, 0.0f, 0.0f);
-			break;
-		case Axis.y:
-			t.eulerAngles = new Vector3(0.0f, angle, 0.0f);
-			break;
-		case Axis.z:
-			t.eulerAngles = new Vector3(0.0f, 0.0f, angle);
-			break;
-		}
-        
-	}
+        public Axis axis;
+        public float speed;
+
+
+        private Transform t;
+        private float angle = 0.0f;
+
+        public float Angle
+        {
+            get { return angle; }
+            set { angle = value; }
+        }
+
+        void Start()
+        {
+            t = GetComponent<Transform>();
+        }
+
+        void Update()
+        {
+            angle = angle + speed * Time.deltaTime;
+            switch (axis)
+            {
+                case Axis.x:
+                    t.eulerAngles = new Vector3(angle, 0.0f, 0.0f);
+                    break;
+                case Axis.y:
+                    t.eulerAngles = new Vector3(0.0f, angle, 0.0f);
+                    break;
+                case Axis.z:
+                    t.eulerAngles = new Vector3(0.0f, 0.0f, angle);
+                    break;
+            }
+
+        }
+    }
 }

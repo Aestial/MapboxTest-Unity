@@ -1,17 +1,18 @@
-﻿using UnityEngine;
-using UnityEngine.Events;
-
-public class OnMouseDownEvent : MonoBehaviour 
+﻿namespace Claro.Map
 {
-	[SerializeField] private Canvas canvas;
+    using UnityEngine;
+    using UnityEngine.Events;
 
-    public UnityEvent onMouseDownEvent;
+    public class OnMouseDownEvent : MonoBehaviour
+    {
+        public UnityEvent onMouseDownEvent;
+        [SerializeField] private Canvas canvas;
+        private new bool enabled = false;
 
-	private new bool enabled = false;
-	
-	void OnMouseDown () 
-	{
-		Debug.Log ("Click Events Invoked!");
-        this.onMouseDownEvent.Invoke();
-	}
+        void OnMouseDown()
+        {
+            Debug.Log("Click Events Invoked!");
+            this.onMouseDownEvent.Invoke();
+        }
+    }
 }
