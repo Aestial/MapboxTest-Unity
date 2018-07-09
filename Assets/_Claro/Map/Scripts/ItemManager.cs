@@ -1,9 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-
-namespace Claro.Map
+﻿namespace Claro.Map
 {
     public class ItemManager : Singleton<ItemManager>
     {

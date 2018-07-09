@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/_Claro/Scenes/Main.unity
+  - enabled: 0
+    path: Assets/_Claro/Map/Scenes/ClaroMap.unity
     guid: 243c016d2793d4ec082aeb9607332ac9
+  - enabled: 1
+    path: Assets/_Claro/Cam/Cam.unity
+    guid: 0603c01aa270046c7b8fe279b9966b32
   m_configObjects: {}

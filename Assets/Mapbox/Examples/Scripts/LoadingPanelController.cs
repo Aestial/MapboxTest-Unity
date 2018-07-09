@@ -20,12 +20,13 @@ namespace Mapbox.Examples
 		{
 			_map = FindObjectOfType<AbstractMap>();
 			_map.OnInitialized += _map_OnInitialized;
+            _text.text = "BIENVENIDO";
 		}
 
 		void _map_OnInitialized()
 		{
 			var visualizer = _map.MapVisualizer;
-			_text.text = "LOADING";
+			_text.text = "CARGANDO";
 			visualizer.OnMapVisualizerStateChanged += (s) =>
 			{
 
