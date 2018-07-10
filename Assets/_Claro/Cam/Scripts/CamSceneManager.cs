@@ -7,7 +7,6 @@
     public class CamSceneManager : Singleton<CamSceneManager>
     {
 
-        // Use this for initialization
         void Start()
         {
 
@@ -18,11 +17,6 @@
             ItemManager.Instance.RemoveCameraScene();
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
     }
    
 }

@@ -10,7 +10,7 @@ public class GyroControl : MonoBehaviour {
     private GameObject camContainer;
     private Quaternion rot;
 
-    public GameObject cube;
+    //public GameObject cube;
 
 	private void Start()
 	{
@@ -45,7 +45,7 @@ public class GyroControl : MonoBehaviour {
         if(gyroEnabled)
         {
             this.transform.localRotation = gyro.attitude * rot;
-            cube.transform.rotation = gyro.attitude * rot;
+            //cube.transform.rotation = gyro.attitude * rot;
         }
 	}
 }
