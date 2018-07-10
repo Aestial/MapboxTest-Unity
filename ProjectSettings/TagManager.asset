@@ -15,8 +15,8 @@ TagManager:
   - 
   - PostProcessing
   - Map
-  - 
-  - 
+  - Camera
+  - AR
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3061563367
+    locked: 0
+  - name: UI
+    uniqueID: 2886402417
     locked: 0

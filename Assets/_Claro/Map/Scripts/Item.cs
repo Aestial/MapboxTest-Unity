@@ -4,7 +4,7 @@
 
     public class Item : MonoBehaviour
     {
-        [SerializeField] private Canvas canvas;
+        //[SerializeField] private Canvas canvas;
 
         public void SetCurrent()
         {
@@ -16,15 +16,20 @@
             ItemManager.Instance.Current = null;
         }
 
-        public void Display(bool display)
-        {
-            this.canvas.enabled = display;
-        }
+        //public void Display(bool display)
+        //{
+        //    this.canvas.enabled = display;
+        //}
 
-        void Start()
-        {
-            this.Display(false);
-        }
+        //public void ActiveCamera()
+        //{
+        //    ItemManager.Instance.AddCameraScene();
+        //}
+
+        //void Start()
+        //{
+        //    this.Display(false);
+        //}
     }
 }
 

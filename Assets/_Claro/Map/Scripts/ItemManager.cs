@@ -1,7 +1,11 @@
 ﻿namespace Claro.Map
 {
+    using UnityEngine;
+    using UnityEngine.SceneManagement;
+
     public class ItemManager : Singleton<ItemManager>
     {
+        [SerializeField] private string CamSceneName;
 
         public Item current;
 
@@ -19,7 +23,18 @@
         private void Display(bool display)
         {
             if (this.current != null)
-                this.current.Display(display);
+                ItemModalController.Instance.EnableModal(display);
+                //this.current.Display(display);
+        }
+
+        public void AddCameraScene()
+        {
+            SceneManager.LoadSceneAsync(this.CamSceneName, LoadSceneMode.Additive);
+        }
+
+        public void RemoveCameraScene()
+        {
+            SceneManager.UnloadSceneAsync(this.CamSceneName);
         }
     }
 }
