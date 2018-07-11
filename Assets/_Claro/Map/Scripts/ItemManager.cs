@@ -29,6 +29,7 @@
 
         public void AddCameraScene()
         {
+            LoadingPanelController.Instance.ActivePanel();
             SceneManager.LoadSceneAsync(this.CamSceneName, LoadSceneMode.Additive);
         }
 
